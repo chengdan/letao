@@ -17,6 +17,11 @@ a:link,a:visited,a:hover,a:active{
     text-align: center;
 }
 
+.lt_main .table td,th{
+    text-align: center;
+    vertical-align: middle;
+}
+
 .lt_aside{
     width: 180px;
     height: 100%;
