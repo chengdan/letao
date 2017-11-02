@@ -1,7 +1,7 @@
 /**
  * Created by 程丹 on 2017/11/1.
  */
-mui('.mui-scroll-wrapper').scroll({
+var sc = mui('.mui-scroll-wrapper').scroll({
     indicators: false
 });
 
@@ -32,4 +32,5 @@ $(".lt_aside ul").on("click","li",function () {
     var id = $(this).data("id");
     renderSecond(id);
     // console.log(id);
+    sc[1].scrollTo(0,0,500);
 });

@@ -104,6 +104,10 @@ html,body{
     width: 100%;
     height: 100%;
 }
+.lt_product li p{
+    height: 37px;
+    margin-top: 10px;
+}
 .lt_product li span:first-child {
     color: red;
 }
@@ -114,7 +118,26 @@ html,body{
     margin-right: 2%;
 }
 
-
+.lt_search{
+    padding: 10px;
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+.lt_search input{
+    width: 100%;
+    height: 34px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 0;
+    border: 1px solid #007aff;
+}
+.lt_search button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 0 5px 5px 0;
+}
 
 
 
