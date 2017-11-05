@@ -95,6 +95,7 @@
     bottom: 55px;
     font-size: 12px;
     color: red;
+    max-width: 640px;
 }
 .lt_total a{
     background-color: red;
