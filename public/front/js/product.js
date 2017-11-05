@@ -16,7 +16,7 @@ $(function () {
             id : id
         },
         success : function (data) {
-            console.log(data);
+            // console.log(data);
             var temp = data.size.split("-");
             var sizeArray = [];
             for (var i = temp[0]; i <= temp[1]; i++){

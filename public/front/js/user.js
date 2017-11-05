@@ -7,7 +7,7 @@ $(function () {
         url:"/user/queryUserMessage",
         success : function (msg) {
             tools.checkLogin(msg);
-            console.log(msg);
+            // console.log(msg);
 
             $(".mui-table-view .info").html(template("tpl",msg));
         }
