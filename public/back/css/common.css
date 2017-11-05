@@ -55,6 +55,8 @@ a:link,a:visited,a:hover,a:active{
     border-radius: 50%;
     margin: 30px auto 0;
     display: block;
+    text-align:center;
+
 }
 .lt_aside .user p{
     color: #fff;
@@ -136,4 +138,5 @@ a:link,a:visited,a:hover,a:active{
     left: 0;
     opacity: 0;
 }
+
 

@@ -34,8 +34,9 @@
                         <a data-type="num" href="javascript:;">库存<span class="fa fa-angle-down"></span></a>
                         <a href="javascript:;">折扣<span class="fa fa-angle-down"></span></a>
                     </div>
-                    <div class="lt_product mui-clearfix">
-                        <ul>
+                    <div class="lt_product">
+                        <div class="loading"></div>
+                        <ul class="mui-clearfix">
 
                         </ul>
                     </div>
@@ -61,7 +62,7 @@
     <p>啊哦，没有搜到相关的商品，要不试试别的吧</p>
     {{/if}}
     {{each data v i}}
-    <li><a href="#" class="item">
+    <li><a href="product.html?productId={{v.id}}" class="item">
         <img src="{{v.pic[0].picAddr}}" alt="">
         <p class="mui-ellipsis-2">{{v.proName}}</p>
         <p><span>&yen;{{v.price}}</span><span>&yen;{{v.oldPrice}}</span></p>

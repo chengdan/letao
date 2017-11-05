@@ -20,12 +20,14 @@ function render(data) {
         data : data,
         success : function (data) {
             // console.log(data);
-            $(".lt_product ul").html( template("tpl",data));
+            setTimeout(function () {
+                $(".lt_product").html( template("tpl",data));
+            },2000);
         }
     })
 }
 var key = tools.getParam("key");
-$(".lt_search input").val(key);
+$(".lt_search input").attr("placeholder",key);
 data.proName = key;
 render(data);
 
@@ -39,8 +41,11 @@ $(".lt_search button").on("click",function () {
     if(key === ""){
         mui.toast("哎呀，我不知道你要搜啥呀");
     }
+    $(".lt_product").html('<div class="loading"></div>');
     data.proName = key;
     render(data);
+    $(".lt_search input").val("");
+    $(".lt_search input").attr("placeholder",key);
 });
 
 
